@@ -12,19 +12,19 @@ export default function Header() {
     <div className="outer">
       
       <div className="header">
-        <a href="https://witty-rock-07aaff410.5.azurestaticapps.net/home">
+        <a href="http://localhost:3000/home">
         <img src={logo} alt="" className="logo"  width='130px' height='42px'/></a>
         <ul className="nav">
-          <a href="https://witty-rock-07aaff410.5.azurestaticapps.net/whatwedo">
+          <a href="http://localhost:3000/whatwedo">
             {" "}
             <li>What we do? </li>{" "}
           </a>
-          <a href="https://witty-rock-07aaff410.5.azurestaticapps.net/destination">
+          <a href="http://localhost:3000/destination">
             {" "}
             <li>Destination</li>{" "}
           </a>
           
-          <a href="https://witty-rock-07aaff410.5.azurestaticapps.net/filter">
+          <a href="http://localhost:3000/filter">
             {" "}
             <li>
               <img className="icon" src={explore1} />
@@ -32,21 +32,21 @@ export default function Header() {
             </li>
           </a>
           
-          <a href="https://witty-rock-07aaff410.5.azurestaticapps.net/contactus">
+          <a href="http://localhost:3000/contactus">
             {" "}
             <li>
               <img className="icon" src={wishlist} alt="" />
               Contact Us
             </li>
           </a>
-          <a href="https://witty-rock-07aaff410.5.azurestaticapps.net/FAQ's">
+          <a href="http://localhost:3000/FAQ's">
             {" "}
             <li>
               <img className="icon" src={faq} alt="" />
               FAQ'S
             </li>
           </a>
-          <a href="https://witty-rock-07aaff410.5.azurestaticapps.net/Logout">
+          <a href="http://localhost:3000/Logout">
             {" "}
             <li className="s_in">
               <img className="icon" src={signin} alt="" />
