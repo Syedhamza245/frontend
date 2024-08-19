@@ -32,7 +32,7 @@ export default function Home() {
     if (!token) {
       navigate('/signin');
     } else {
-      fetch('http://localhost:5000/api/user', {
+      fetch('https://edugate.azurewebsites.net/api/user', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },

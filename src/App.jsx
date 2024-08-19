@@ -10,10 +10,9 @@ import Logout from "./components/Logout.jsx";
 import PrivateRoute from './components/Private.jsx';
 import Faqs from './pages/Faqs.jsx';
 import Chatbot from './components/Chatbot.jsx';
-// import Chatbot from './components/Chatbot.jsx';  // Import the Chatbot component
 
 function App() {
-  // const location = useLocation();  // Get the current route
+  const location = useLocation();  // Get the current route
 
   return (
     <>
@@ -30,10 +29,12 @@ function App() {
         <Route path="/contactus" element={<PrivateRoute element={<ContactUs />} />} />
         <Route path="/FAQ's" element={<PrivateRoute element={<Faqs />} />} />
       </Routes>
-      <div className="chatbot">
-        <Chatbot/>
-      </div>
-     {/* {location.pathname !== '/signin' && location.pathname !== '/register' && <Chatbot />} */}
+      {/* Conditionally render Chatbot based on the current route */}
+      {location.pathname !== '/signin' && location.pathname !== '/register' && (
+        <div className="chatbot">
+          <Chatbot />
+        </div>
+      )}
     </>
   );
 }

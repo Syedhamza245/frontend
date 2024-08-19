@@ -13,7 +13,7 @@ function Signin() {
     
     console.log('Submitting login form with:', { email, password });
 
-    fetch('http://localhost:5000/api/login', {
+    fetch('https://edugate.azurewebsites.net/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ function Signin() {
     
     console.log('Submitting signup form with:', { email, password });
 
-    fetch('http://localhost:5000/api/register', {
+    fetch('https://edugate.azurewebsites.net/api/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

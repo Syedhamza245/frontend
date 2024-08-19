@@ -9,7 +9,7 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/register', {
+      const response = await fetch('https://edugate.azurewebsites.net/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ const Register = () => {
         <button type="submit" className="register-button">Register</button>
       </form>
       {message && <p className="register-message">{message}</p>}
-      <p>Have an Account, You can directly Login here : <a className='register' href="http://localhost:3000/signin">Sign In</a></p>
+      <p>Have an Account, You can directly Login here : <a className='register' href="https://witty-rock-07aaff410.5.azurestaticapps.net/signin">Sign In</a></p>
 
     </div>
   );
