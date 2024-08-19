@@ -1,0 +1,131 @@
+.contact-page-5h3x8 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif; /* Font set to Poppins */
+}
+
+/* Apply blur to the background */
+.contact-page-5h3x8::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(209, 212, 214, 0.8);
+  background-size: cover;
+  filter: blur(16px); /* Apply blur effect */
+  z-index: -1; /* Ensure it is behind the content */
+}
+
+/* Ensure the container has relative positioning */
+.contact-us-container-5h3x8 {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(53,137,254, 0.8);
+  border-radius: 12px;
+  color: black;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  animation: slideIn-5h3x8 0.6s ease-out forwards;
+  z-index: 1; /* Ensure content is above the blur */
+}
+
+@keyframes slideIn-5h3x8 {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Styling for the form and messages */
+.contact-form-5h3x8 .form-group-5h3x8 {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.contact-form-5h3x8 label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  color: white;
+  font-size: 14px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.contact-form-5h3x8 input,
+.contact-form-5h3x8 textarea {
+  width: 100%;
+  padding: 12px;
+  padding-left: 120px; /* Create space for the label */
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #f0f0f0;
+  background: transparent;
+  color: white; /* Text color */
+  outline: none;
+  font-family: 'Poppins', sans-serif; /* Font set to Poppins */
+  font-size: 16px;
+}
+
+.contact-form-5h3x8 input:focus,
+.contact-form-5h3x8 textarea:focus {
+  border-bottom: 2px solid rgba(53,137,254, 0.8); /* Change border color on focus */
+}
+
+.contact-form-5h3x8 input:focus + label,
+.contact-form-5h3x8 textarea:focus + label,
+.contact-form-5h3x8 input:not(:placeholder-shown) + label,
+.contact-form-5h3x8 textarea:not(:placeholder-shown) + label {
+  top: -25px;
+  left: 0;
+  font-size: 12px;
+  color: rgba(53,137,254, 0.8);
+}
+
+.contact-form-5h3x8 button.send-message-btn-5h3x8 {
+  background: black;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Font set to Poppins */
+}
+
+.contact-form-5h3x8 button.send-message-btn-5h3x8:hover {
+  background: rgba(209, 212, 214, 0.8);
+  color: black;
+  transform: scale(1.05);
+}
+
+.success-message-5h3x8 {
+  text-align: center;
+  color: rgb(7, 103, 29);
+  margin-top: 15px;
+}
+
+.error-message-5h3x8 {
+  color: rgb(219, 0, 0);
+  margin-top: 15px;
+}
+
+.cont-head {
+  text-align: center;
+}

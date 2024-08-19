@@ -1,0 +1,69 @@
+.whatwedo{
+    width: 100%;
+    height: 120rem;
+    background-color: var(--lightblue);
+}
+.first-whatwedo{
+    background-image: url('../assets/whatwedo.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    width: 100%;
+  /* object-fit: cover;
+  align-self: center; */
+    /* background-position: 0%; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 5rem;
+   
+}
+.first-whatwedo p{
+    text-align: center;
+}
+.second-whatwedo p{
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+.second-whatwedo{
+    padding: 4rem;
+}
+.third-whatwedo{
+    background-color: var(--gray);
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.Team{
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+.Team-member{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+.four-whatwedo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 5rem;
+    gap: 1rem;
+}
+.four-whatwedo p{
+    font-weight: 500;
+}
+.four-whatwedo h1{
+    padding-bottom: 2rem;
+}
