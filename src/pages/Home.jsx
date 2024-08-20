@@ -29,7 +29,7 @@ export default function Home() {
     if (!token) {
       navigate('/signin');
     } else {
-      fetch('https://edugate.azurewebsites.net/api/user', {
+      fetch('https://backend-gjz9.onrender.com/api/user', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
