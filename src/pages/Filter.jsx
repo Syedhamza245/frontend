@@ -14,7 +14,6 @@ const Filter = () => {
   const [tuition, setTuition] = useState("");
   const [prog, setProg] = useState("");
 
-
   useEffect(() => {
     fetchData();
   }, [country, duration, scholarship, ielts, tuition, prog]);
