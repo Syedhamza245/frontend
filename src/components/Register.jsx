@@ -9,7 +9,7 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('https://edugate-cbdne9atdpddajh8.scm.eastus-01.azurewebsites.net/api/deployments/fae4d150f5b14f2fbed8b1d283e79815/log/api/register', {
+      const response = await fetch('https://backend-gjz9.onrender.com/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ const Register = () => {
         <button type="submit" className="register-button">Register</button>
       </form>
       {message && <p className="register-message">{message}</p>}
-      <p>Have an Account, You can directly Login here : <a className='register' href="https://delightful-pebble-06f481310.5.azurestaticapps.net/signin">Sign In</a></p>
+      <p>Have an Account, You can directly Login here : <a className='register' href="https://frontend-f7ks.onrender.com/signin">Sign In</a></p>
 
     </div>
   );
