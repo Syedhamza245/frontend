@@ -13,7 +13,7 @@ function Signin() {
     
     console.log('Submitting login form with:', { email, password });
 
-    fetch('http://localhost:5000/api/login', {
+    fetch('https://edugate-cbdne9atdpddajh8.scm.eastus-01.azurewebsites.net/api/deployments/fae4d150f5b14f2fbed8b1d283e79815/log/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ function Signin() {
     
     console.log('Submitting signup form with:', { email, password });
 
-    fetch('http://localhost:5000/api/register', {
+    fetch('https://edugate-cbdne9atdpddajh8.scm.eastus-01.azurewebsites.net/api/deployments/fae4d150f5b14f2fbed8b1d283e79815/log/api/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
