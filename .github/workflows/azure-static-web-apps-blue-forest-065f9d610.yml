@@ -3,7 +3,7 @@ name: Build and Deploy React App to Azure Static Web Apps
 on:
   push:
     branches:
-      - main  # Replace with your default branch
+      - main
 
 jobs:
   build_and_deploy:
@@ -15,7 +15,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '14'  # Use the Node.js version required by your project
+        node-version: '14'  # Adjust as necessary
 
     - name: Install dependencies
       run: npm install
@@ -26,7 +26,7 @@ jobs:
     - name: Deploy
       uses: Azure/static-web-apps-deploy@v1
       with:
-        app_location: "/myapp"  # Path to your frontend code
-        api_location: ""         # Leave empty if no API
-        output_location: "build" # Build output directory
+        app_location: "/myapp"
+        api_location: ""
+        output_location: "build"
         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
