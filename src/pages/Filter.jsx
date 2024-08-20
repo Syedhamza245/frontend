@@ -17,7 +17,7 @@ const Filter = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://edugate-cbdne9atdpddajh8.scm.eastus-01.azurewebsites.net/api/deployments/fae4d150f5b14f2fbed8b1d283e79815/log/api`, {
+        const response = await axios.get(`https://backend-gjz9.onrender.com/api`, {
           params: {
             country: country,
             duration: duration,
