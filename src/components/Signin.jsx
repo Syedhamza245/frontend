@@ -11,7 +11,7 @@ const Signin = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/login', {
+      const response = await fetch('https://edugate-cbdne9atdpddajh8.scm.eastus-01.azurewebsites.net/api/deployments/fae4d150f5b14f2fbed8b1d283e79815/log/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ const Signin = () => {
         <button type="submit" className="signin-button">Login</button>
       </form>
       {message && <p className="signin-message">{message}</p>}
-      <p>Dont't have an Account, Register Yourself : <a className='register' href="http://localhost:3000/register">Register</a></p>
+      <p>Dont't have an Account, Register Yourself : <a className='register' href="https://delightful-pebble-06f481310.5.azurestaticapps.net/register">Register</a></p>
     </div>
   );
 };
