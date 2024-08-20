@@ -15,32 +15,32 @@ const Filter = () => {
   const [prog, setProg] = useState("");
 
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`http://localhost:5000/api`, {
+          params: {
+            country: country,
+            duration: duration,
+            scholarship: scholarship,
+            ielts: ielts,
+            tuition: tuition,
+            prog: prog
+          },
+        });
+
+        if (Array.isArray(response.data)) {
+          setPrograms(response.data);
+        } else {
+          setPrograms([]); // Fallback if data is not an array
+        }
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+        setPrograms([]); // Fallback on error
+      }
+    };
+
     fetchData();
   }, [country, duration, scholarship, ielts, tuition, prog]);
-
-  const fetchData = async () => {
-    try {
-      const response = await axios.get(`http://localhost:5000/api`, {
-        params: {
-          country: country,
-          duration: duration,
-          scholarship: scholarship,
-          ielts: ielts,
-          tuition: tuition,
-          prog: prog
-        },
-      });
-
-      if (Array.isArray(response.data)) {
-        setPrograms(response.data);
-      } else {
-        setPrograms([]); // Fallback if data is not an array
-      }
-    } catch (error) {
-      console.error("Error fetching data: ", error);
-      setPrograms([]); // Fallback on error
-    }
-  };
 
   return (
     <>
