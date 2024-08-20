@@ -3,34 +3,33 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches:
-      - main  # Change to your default branch
+      - main  # Replace with your branch name if different
 
 jobs:
   build_and_deploy_job:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-    - name: Checkout GitHub Action
-      uses: actions/checkout@v3
+      - name: Checkout GitHub Action
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16'  # Adjust based on your Node.js version
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Ensure this matches your Node.js version
 
-    - name: Install Dependencies
-      run: npm install
-      working-directory: .
+      - name: Install Dependencies
+        run: npm install
+        working-directory: .
 
-    - name: Build
-      run: npm run build
-      working-directory: .
+      - name: Build
+        run: npm run build
+        working-directory: .
 
-    - name: Deploy to Azure Static Web Apps
-      id: deploy
-      uses: Azure/static-web-apps-deploy@v1
-      with:
-        azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}  # Set up in your repository secrets
-        app_location: "/"  # Path to your app, typically '/' for React
-        output_location: "build"  # The folder where your build output goes
-        api_location: ""  # Leave empty if no custom API
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          app_location: "/"
+          output_location: "build"
+          api_location: ""
