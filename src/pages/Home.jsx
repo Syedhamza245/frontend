@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./home.css";
 import "../App.css";
 // import banner from "../assets/banner.png";
@@ -19,12 +19,9 @@ import Germany from "../assets/Germany.png";
 import Italy from "../assets/Italy.png";
 import Adsbanner from "../assets/ADS BANNER.png";
 
-import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
 export default function Home() {
-  const [user, setUser] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -39,7 +36,8 @@ export default function Home() {
       })
       .then(res => res.json())
       .then(data => {
-        setUser(data);
+        // Use the user data if needed or just handle it here
+        console.log(data); // Example usage
       })
       .catch(err => {
         console.error('Failed to fetch user:', err);
@@ -48,18 +46,17 @@ export default function Home() {
     }
   }, [navigate]);
 
-
   return (
     <div className="landing-page">
       <Header />
       <div className="first">
-      <div className="banner-container">
-        <div className="banner">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        </div>
+        <div className="banner-container">
+          <div className="banner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
         <div className="first-content">
           <h1>Choose Your Best Abroad Destination.</h1>
@@ -78,17 +75,17 @@ export default function Home() {
         <div className="card-section">
           <div className="first-cards">
             <div className="card1">
-              <img src={degree} alt="" />
+              <img src={degree} alt="Degree" />
               <h1>50+</h1>
               <p>Universities</p>
             </div>
             <div className="card1">
-              <img src={university} alt="" />
+              <img src={university} alt="University" />
               <h1>20+</h1>
               <p>Degree Programs</p>
             </div>
             <div className="card1">
-              <img src={courses} alt="" />
+              <img src={courses} alt="Courses" />
               <h1>100+</h1>
               <p>Courses</p>
             </div>
@@ -100,16 +97,16 @@ export default function Home() {
         <h1>Why EduGate Best for Choosing Abroad University.</h1>
 
         <div className="Filter_Card">
-          <img src={Budget} alt="" />
-          <img src={ILETScard} alt="" />
-          <img src={CGPA} alt="" />
+          <img src={Budget} alt="Budget" />
+          <img src={ILETScard} alt="IELTS" />
+          <img src={CGPA} alt="CGPA" />
         </div>
 
         <div className="flags">
-          <img src={Canada} alt="" />
-          <img src={Italy} alt="" />
-          <img src={Australia} alt="" />
-          <img src={Germany} alt="" />
+          <img src={Canada} alt="Canada" />
+          <img src={Italy} alt="Italy" />
+          <img src={Australia} alt="Australia" />
+          <img src={Germany} alt="Germany" />
         </div>
       </div>
 
@@ -118,7 +115,7 @@ export default function Home() {
 
         <div className="programs-card">
           <div className="bachelor-program">
-            <img src={BS} alt="" />
+            <img src={BS} alt="Bachelor Program" />
             <span>Bachelor Programs</span>
             <p>
               We offer an exceptional Budget search filter designed to assist
@@ -130,7 +127,7 @@ export default function Home() {
           </div>
 
           <div className="master-program">
-            <img src={MS} alt="" />
+            <img src={MS} alt="Master Program" />
             <span>Master Programs</span>
             <p>
               We offer an exceptional Budget search filter designed to assist
@@ -138,37 +135,37 @@ export default function Home() {
               financial considerations and individual preferences, ensuring an
               optimal match for your budget and suitability.
             </p>
-            <button className="primary-button">Search Bachelors</button>
+            <button className="primary-button">Search Masters</button>
           </div>
         </div>
         <div className="AdsBanner">
-          <img src={Adsbanner} alt="" />
+          <img src={Adsbanner} alt="Advertisement Banner" />
         </div>
 
         <div>
           <h1>Students Think About Edugate.</h1>
           <div className="Last-section">
-          <div className="Last-section-Textpart">
-            <p>
-              I started by searching on Google for courses that suites my
-              interest and I was redirected to different websites, one of which
-              is Edugate.com which turned out to be the most useful. I chose
-              Vytautas Magnus University because it was the most affordable for
-              me and the course completely suited my needs. Studyportals helped
-              by giving me a wide range of detailed options of schools and
-              courses to choose from. I did not have an idea of either the
-              course or the university I wanted to attend. At the initial stage,
-              before the application, I received all the necessary information
-              about the course and school, through a direct website link to the
-              course.
-            </p>
-            <button className="primary-button">Read More</button>
-          </div>
-          <img src={Students} alt="" />
+            <div className="Last-section-Textpart">
+              <p>
+                I started by searching on Google for courses that suit my
+                interest and I was redirected to different websites, one of which
+                is Edugate.com which turned out to be the most useful. I chose
+                Vytautas Magnus University because it was the most affordable for
+                me and the course completely suited my needs. Studyportals helped
+                by giving me a wide range of detailed options of schools and
+                courses to choose from. I did not have an idea of either the
+                course or the university I wanted to attend. At the initial stage,
+                before the application, I received all the necessary information
+                about the course and school, through a direct website link to the
+                course.
+              </p>
+              <button className="primary-button">Read More</button>
+            </div>
+            <img src={Students} alt="Students" />
           </div>
         </div>   
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
