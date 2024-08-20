@@ -1,14 +1,26 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
 
+# build output
+/build
+/dist
+
 # testing
 /coverage
 
+# IDE and editor specific
+.vscode/
+.idea/
 
+# local testing and cache
+.cache/
+.tmp/
+
+# local database files
+*.sqlite
+*.db
 
 # misc
 .DS_Store
