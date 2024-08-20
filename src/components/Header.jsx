@@ -12,19 +12,19 @@ export default function Header() {
     <div className="outer">
       
       <div className="header">
-        <a href="http://localhost:3000/home">
+        <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/home">
         <img src={logo} alt="logo" className="logo"  width='130px' height='42px'/></a>
         <ul className="nav">
-          <a href="http://localhost:3000/whatwedo">
+          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/whatwedo">
             {" "}
             <li>What we do? </li>{" "}
           </a>
-          <a href="http://localhost:3000/destination">
+          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/destination">
             {" "}
             <li>Destination</li>{" "}
           </a>
           
-          <a href="http://localhost:3000/filter">
+          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/filter">
             {" "}
             <li>
               <img className="icon" src={explore1} alt="ada" />
@@ -32,21 +32,21 @@ export default function Header() {
             </li>
           </a>
           
-          <a href="http://localhost:3000/contactus">
+          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/contactus">
             {" "}
             <li>
               <img className="icon" src={wishlist} alt="dvgds" />
               Contact Us
             </li>
           </a>
-          <a href="http://localhost:3000/FAQ's">
+          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/FAQ's">
             {" "}
             <li>
               <img className="icon" src={faq} alt="safgasrg" />
               FAQ'S
             </li>
           </a>
-          <a href="http://localhost:3000/Logout">
+          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/Logout">
             {" "}
             <li className="s_in">
               <img className="icon" src={signin} alt="sagfr" />
