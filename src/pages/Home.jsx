@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 import "../App.css";
-import banner from "../assets/banner.png";
+// import banner from "../assets/banner.png";
 import BS from "../assets/BS.png";
 import MS from "../assets/MS.png";
 import Students from "../assets/students.png";
