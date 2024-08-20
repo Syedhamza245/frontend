@@ -30,9 +30,9 @@ export default function Footer() {
             <p>Follow us on</p>
 
             <div className="social-icons">
-              <img src={Facebook} />
-              <img src={Linkedin} />
-              <img src={Twitter} />
+              <img src={Facebook} alt="facebook"/>
+              <img src={Linkedin} alt="lnkdn"/>
+              <img src={Twitter} alt="twt"/>
             </div>
           </div>
         </div>
