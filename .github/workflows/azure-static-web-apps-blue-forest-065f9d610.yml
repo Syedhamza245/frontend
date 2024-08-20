@@ -26,7 +26,7 @@ jobs:
     - name: Deploy
       uses: Azure/static-web-apps-deploy@v1
       with:
-        app_location: "."  # Root directory or update to your app's actual location
-        api_location: ""
-        output_location: "build"  # The default build directory for React apps
+        app_location: "."  # Path to your React app's location
+        api_location: ""  # Leave empty if not using an API
+        output_location: "build"  # Default build output for React apps
         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
