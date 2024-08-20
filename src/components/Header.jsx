@@ -13,7 +13,7 @@ export default function Header() {
       
       <div className="header">
         <a href="http://localhost:3000/home">
-        <img src={logo} alt="" className="logo"  width='130px' height='42px'/></a>
+        <img src={logo} alt="logo" className="logo"  width='130px' height='42px'/></a>
         <ul className="nav">
           <a href="http://localhost:3000/whatwedo">
             {" "}
@@ -27,7 +27,7 @@ export default function Header() {
           <a href="http://localhost:3000/filter">
             {" "}
             <li>
-              <img className="icon" src={explore1} />
+              <img className="icon" src={explore1} alt="ada" />
               Explore
             </li>
           </a>
@@ -35,21 +35,21 @@ export default function Header() {
           <a href="http://localhost:3000/contactus">
             {" "}
             <li>
-              <img className="icon" src={wishlist} alt="" />
+              <img className="icon" src={wishlist} alt="dvgds" />
               Contact Us
             </li>
           </a>
           <a href="http://localhost:3000/FAQ's">
             {" "}
             <li>
-              <img className="icon" src={faq} alt="" />
+              <img className="icon" src={faq} alt="safgasrg" />
               FAQ'S
             </li>
           </a>
           <a href="http://localhost:3000/Logout">
             {" "}
             <li className="s_in">
-              <img className="icon" src={signin} alt="" />
+              <img className="icon" src={signin} alt="sagfr" />
               Sign Out
             </li>{" "}
           </a>
