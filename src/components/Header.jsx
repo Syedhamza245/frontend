@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import logo from "../assets/portal_logo.png";
 import explore1 from "../assets/explore1.png";
-import apply1 from "../assets/Apply1.png";
+// import apply1 from "../assets/Apply1.png";
 import wishlist from "../assets/Heart.png";
 import signin from "../assets/signup.png";
 import faq from "../assets/faq-ic.png"
