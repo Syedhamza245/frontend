@@ -12,19 +12,19 @@ export default function Header() {
     <div className="outer">
       
       <div className="header">
-        <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/home">
+        <a href="https://frontend-f7ks.onrender.com/home">
         <img src={logo} alt="logo" className="logo"  width='130px' height='42px'/></a>
         <ul className="nav">
-          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/whatwedo">
+          <a href="https://frontend-f7ks.onrender.com/whatwedo">
             {" "}
             <li>What we do? </li>{" "}
           </a>
-          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/destination">
+          <a href="https://frontend-f7ks.onrender.com/destination">
             {" "}
             <li>Destination</li>{" "}
           </a>
           
-          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/filter">
+          <a href="https://frontend-f7ks.onrender.com/filter">
             {" "}
             <li>
               <img className="icon" src={explore1} alt="ada" />
@@ -32,21 +32,21 @@ export default function Header() {
             </li>
           </a>
           
-          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/contactus">
+          <a href="https://frontend-f7ks.onrender.com/contactus">
             {" "}
             <li>
               <img className="icon" src={wishlist} alt="dvgds" />
               Contact Us
             </li>
           </a>
-          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/FAQ's">
+          <a href="https://frontend-f7ks.onrender.com/FAQ's">
             {" "}
             <li>
               <img className="icon" src={faq} alt="safgasrg" />
               FAQ'S
             </li>
           </a>
-          <a href="https://delightful-pebble-06f481310.5.azurestaticapps.net/Logout">
+          <a href="https://frontend-f7ks.onrender.com/Logout">
             {" "}
             <li className="s_in">
               <img className="icon" src={signin} alt="sagfr" />
